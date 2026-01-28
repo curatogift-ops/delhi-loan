@@ -155,6 +155,101 @@
             </div>
         </section>
 
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Real experiences from satisfied customers across Delhi & NCR</p>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Dev Insurance Point helped me get the best home loan rate in Delhi. Their team came to my office and handled everything professionally. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Home Loan, Dwarka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"I was searching for car insurance renewal and they got me an amazing deal with zero processing fee. The doorstep service was very convenient!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Car Insurance, Gurgaon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Excellent service for my wedding venue booking! They negotiated better rates than I could find online. Very professional team."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Amit Verma</h4>
+                                <p>Wedding Services, Noida</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Helped me buy my first property in Delhi with complete guidance and best financing options. They truly work for the customer's benefit!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sneha Patel</h4>
+                                <p>Property Purchase, South Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Got my motor claim settled quickly without any hassle. Their agents are knowledgeable and very responsive. Great service!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Vikram Singh</h4>
+                                <p>Motor Claims, Faridabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="cta" class="cta-section">
             <div class="cta-content">
                 <h2>Ready to get the best deal?</h2>
@@ -186,26 +281,35 @@
                             <p>+91 99112 30077</p>
                         </div>
                     </div>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/info@myagents.in" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Dev Insurance Point">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
                                 <option value="" disabled selected>Select Service</option>
-                                <option value="cars">4 Wheelers / Cars</option>
-                                <option value="insurance">Insurance</option>
-                                <option value="claims">Motor Claims</option>
-                                <option value="property">Property</option>
-                                <option value="loans">Loans / Credit Cards</option>
-                                <option value="wedding">Wedding / Events</option>
+                                <option value="4 Wheelers / Cars">4 Wheelers / Cars</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Motor Claims">Motor Claims</option>
+                                <option value="Property">Property</option>
+                                <option value="Loans / Credit Cards">Loans / Credit Cards</option>
+                                <option value="Wedding / Events">Wedding / Events</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn-primary full-width">Send Message</button>
                     </form>
