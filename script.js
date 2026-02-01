@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const headerHeight = 80; // Fixed header height
+                const headerHeight = document.querySelector('header').offsetHeight; // Dynamic header height
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
