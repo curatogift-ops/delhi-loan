@@ -157,7 +157,7 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 110px; /* Increased for larger logo */
+    height: 80px;
     padding: 0 1rem;
 }
 
@@ -169,7 +169,7 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 150px; /* Increased to fill header */
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
@@ -178,9 +178,9 @@ header.scrolled {
 /* Mobile Navigation */
 .nav-links {
     position: fixed;
-    top: 110px;
+    top: 80px;
     right: -100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 80px);
     width: 100%;
     background: var(--white);
     flex-direction: column;
@@ -996,7 +996,8 @@ footer {
     }
     
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 1.3;
     }
     
     h2 {
@@ -1043,9 +1044,9 @@ footer {
     
     .nav-links {
         position: fixed !important;
-        top: 110px !important;
+        top: 80px !important;
         right: -100% !important;
-        height: calc(100vh - 110px) !important;
+        height: calc(100vh - 80px) !important;
         width: 100% !important;
         flex-direction: column !important;
     }
@@ -1064,7 +1065,9 @@ footer {
     }
     
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
     }
     
     h2 {
@@ -1081,7 +1084,7 @@ footer {
     
     /* Desktop Navigation */
     .navbar {
-        height: 150px;
+        height: 100px;
         padding: 0 2rem;
     }
     
@@ -1090,7 +1093,7 @@ footer {
     }
 
     .logo-img {
-        height: 140px; /* Larger for desktop */
+        height: 70px; /* Reduced for better proportion */
     }
     
     .nav-links {
@@ -1143,17 +1146,19 @@ footer {
     .hero {
         flex-direction: row;
         text-align: left;
-        padding: 200px 2rem 4rem;
+        padding: 160px 4rem 4rem;
+        justify-content: center;
+        gap: 4rem;
     }
     
     .hero-content {
-        max-width: 600px;
-        padding-right: 3rem;
+        max-width: 550px;
+        padding-right: 0;
         margin-bottom: 0;
     }
     
     .hero p {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         padding: 0;
     }
     
