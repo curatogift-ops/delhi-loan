@@ -25,6 +25,9 @@
     --shadow-xl: 0 20px 50px -12px rgb(0 0 0 / 0.15);
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --header-height: 80px;
+    --top-bar-height: 40px;
 }
 
 * {
@@ -178,7 +181,7 @@ header.scrolled {
 /* Mobile Navigation */
 .nav-links {
     position: fixed;
-    top: 80px;
+    top: calc(var(--header-height) + var(--top-bar-height));
     right: -100%;
     height: calc(100vh - 80px);
     width: 100%;
@@ -266,7 +269,7 @@ header.scrolled {
     flex-direction: column; /* Stack on mobile */
     align-items: center;
     justify-content: center;
-    padding: 150px 1rem 3rem;
+    padding: calc(var(--header-height) + var(--top-bar-height) + 50px) 1rem 3rem;
     background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
     position: relative;
     overflow: hidden;
@@ -1402,7 +1405,8 @@ footer {
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--white);
     transition: var(--transition);
 }
 
@@ -1453,5 +1457,45 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background: var(--primary-blue-dark);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-info {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top-bar-info div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top-bar-name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--accent-orange-light);
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .top-bar-info {
+        flex-direction: column;
+        gap: 0.25rem;
     }
 }
